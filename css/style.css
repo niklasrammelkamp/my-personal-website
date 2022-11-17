@@ -10,7 +10,12 @@ body {
   background-color: rgb(249, 244, 237);
 }
 
-button {
+a {
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+}
+
+button[type="main"] {
   background-color: yellow;
   border: none;
   border-radius: 50px;
@@ -18,6 +23,31 @@ button {
   font-family: "fragment mono";
   width: fit-content;
   margin-top: 25px;
+  display: flex;
+  transition: 0.5s ease;
+}
+
+button[type="main"]::after {
+  content: "";
+  background-image: url(../images/arrow_down.svg);
+  margin-left: 0;
+  display: inline-flex;
+  opacity: 0;
+  transition: 0.5s ease;
+  margin-top: -5px;
+}
+
+button[type="main"]:hover::after {
+  margin-left: 15px;
+  margin-top: 0;
+  opacity: 1;
+  background-size: 14px 14px;
+  height: 14px;
+  width: 14px;
+}
+
+button[type="main"]:hover {
+  padding: 12px 40px 12px 55px;
 }
 
 h1 {
@@ -51,11 +81,6 @@ nav section {
   display: flex;
   align-items: center;
   padding: 0px 50px 0px 50px;
-}
-
-nav a {
-  text-decoration: none;
-  color: rgb(26, 26, 26);
 }
 
 nav a:hover {
@@ -131,4 +156,5 @@ header .image {
   width: 100%;
   max-width: 500px;
   border-radius: 30px;
+  filter: saturate(0.8);
 }
