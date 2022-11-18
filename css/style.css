@@ -15,6 +15,10 @@ a {
   color: rgb(26, 26, 26);
 }
 
+p {
+  font-size: 14px;
+}
+
 button[type="main"] {
   background-color: yellow;
   border: none;
@@ -50,18 +54,22 @@ button[type="main"]:hover {
   padding: 12px 40px 12px 55px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
+  font-family: syne;
   font-family: syne;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+h1 {
   font-size: 3em;
   margin: 0;
 }
 
 h2 {
-  font-family: syne;
-  font-weight: 700;
-  text-transform: uppercase;
   font-size: 2.5em;
   margin: 0;
 }
@@ -115,8 +123,9 @@ main {
   flex-direction: column;
 }
 
-main section {
-  margin: 100px 0px;
+.section {
+  margin: 150px 0px;
+  max-width: 1200px;
 }
 
 /* ------------ HEADER ------------*/
@@ -128,7 +137,7 @@ header {
   align-items: center;
 }
 
-header p {
+p {
   font-size: 14px;
 }
 
@@ -175,7 +184,38 @@ header .image {
 
 .teaser {
   display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
 }
 
 .teaser_element {
+  max-width: 400px;
+}
+
+.img_wrapper {
+  background-color: blueviolet;
+  width: 100%;
+  padding-bottom: 120%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.teaser_img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transition: 0.5s ease;
+  filter: saturate(0);
+  object-fit: cover;
+  max-width: 400px;
+  min-width: 100%;
+}
+
+.teaser_img:hover {
+  height: 140%;
+  filter: saturate(1);
 }
