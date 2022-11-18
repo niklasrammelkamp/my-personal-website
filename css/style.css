@@ -119,6 +119,8 @@ main section {
   margin: 100px 0px;
 }
 
+/* ------------ HEADER ------------*/
+
 header {
   height: 100vh;
   max-height: 1000px;
@@ -158,4 +160,22 @@ header .image {
   border-radius: 30px;
   filter: saturate(0.8);
   z-index: -10;
+}
+
+/* ------------ STUFF ------------*/
+
+.stuff_overview {
+  width: 100%;
+}
+
+.stuff_overview > .intro {
+  width: 100%;
+  max-width: 700px;
+}
+
+.teaser {
+  display: flex;
+}
+
+.teaser_element {
 }
