@@ -1,0 +1,60 @@
+/* fragment-mono-regular - latin */
+@font-face {
+  font-family: "Fragment Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/fragment-mono-v1-latin/fragment-mono-v1-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fragment-mono-v1-latin/fragment-mono-v1-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fragment-mono-italic - latin */
+@font-face {
+  font-family: "Fragment Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/fragment-mono-v1-latin/fragment-mono-v1-latin-italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fragment-mono-v1-latin/fragment-mono-v1-latin-italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* syne-regular - latin */
+@font-face {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/syne/syne-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/syne/syne-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/syne/syne-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/syne/syne-v15-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/syne/syne-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/syne/syne-v15-latin-regular.svg#Syne") format("svg"); /* Legacy iOS */
+}
+/* syne-700 - latin */
+@font-face {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/syne/syne-v15-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/syne/syne-v15-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/syne/syne-v15-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/syne/syne-v15-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/syne/syne-v15-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/syne/syne-v15-latin-700.svg#Syne")
+      format("svg"); /* Legacy iOS */
+}

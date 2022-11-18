@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "fragment mono";
+  color: rgb(26, 26, 26);
+  background-color: rgb(249, 244, 237);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+}
+
+button[type="main"] {
+  background-color: yellow;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 48px 12px 48px;
+  font-family: "fragment mono";
+  width: fit-content;
+  margin-top: 25px;
+  display: flex;
+  transition: 0.5s ease;
+}
+
+button[type="main"]::after {
+  content: "";
+  background-image: url(../images/arrow_down.svg);
+  margin-left: 0;
+  display: inline-flex;
+  opacity: 0;
+  transition: 0.5s ease;
+  margin-top: -5px;
+}
+
+button[type="main"]:hover::after {
+  margin-left: 15px;
+  margin-top: 0;
+  opacity: 1;
+  background-size: 14px 14px;
+  height: 14px;
+  width: 14px;
+}
+
+button[type="main"]:hover {
+  padding: 12px 40px 12px 55px;
+}
+
+h1 {
+  font-family: syne;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  font-family: syne;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* ------------ NAV ------------*/
+nav {
+  width: 100%;
+  height: 100px;
+  /*background-color: aqua;*/
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+nav section {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
+}
+
+nav a:hover {
+  text-decoration: line-through yellow 2px;
+}
+
+/* ------------ LOGO + MENU ------------*/
+
+.logo {
+  width: 30%;
+  height: 100%;
+  /*background-color: aquamarine;*/
+}
+
+.menu {
+  width: 70%;
+  height: 100%;
+  /*background-color: azure;*/
+  justify-content: flex-end;
+}
+
+.menu a:nth-child(2) {
+  padding: 0px 40px 0px 40px;
+}
+
+/* ------------ MAIN ------------*/
+
+main {
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section {
+  margin: 100px 0px;
+}
+
+header {
+  height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+header p {
+  font-size: 14px;
+}
+
+header .header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+
+header .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 100px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  filter: saturate(0.8);
+  z-index: -10;
+}
