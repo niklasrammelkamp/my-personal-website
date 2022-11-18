@@ -46,6 +46,7 @@ button[type="main"]::after {
 button[type="main"]:hover::after {
   margin-left: 15px;
   margin-top: 0;
+  margin-bottom: 0;
   opacity: 1;
   background-size: 14px 14px;
   height: 14px;
@@ -57,14 +58,22 @@ button[type="main"]:hover {
 }
 
 button[type="small"] {
-  background-color: rgba(22, 22, 22, 0);
+  background-color: yellow;
+  border-radius: 50px;
   border: none;
-  fill: none;
-  padding: 0;
-  margin: 24px 0 0 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   transition: 0.5s ease;
+  padding: 12px 18px 12px 18px;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  opacity: 0;
 }
 
 button[type="small"]::after {
@@ -84,7 +93,8 @@ button[type="small"]::after {
 }
 
 .teaser_element:hover button[type="small"] {
-  padding-left: 10px;
+  padding: 12px 38px 12px 48px;
+  opacity: 1;
 }
 
 h1,
@@ -98,7 +108,7 @@ h4 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.6em;
   margin: 0;
 }
 
@@ -174,6 +184,16 @@ header {
   max-height: 1000px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.back_texture {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  left: -30%;
+  top: -200px;
+  opacity: 0.7;
 }
 
 p {
