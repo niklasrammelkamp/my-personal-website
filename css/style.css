@@ -226,7 +226,7 @@ header .image {
   width: 100%;
   max-width: 500px;
   border-radius: 30px;
-  filter: saturate(0.8);
+  filter: saturate(0.7);
   z-index: -10;
 }
 
@@ -277,4 +277,12 @@ header .image {
 
 .teaser_element:hover .teaser_img {
   transform: scale(1.1);
+}
+
+.teaser_element:hover h4 {
+  padding: 0 0 0 10px;
+}
+
+.teaser_element h4 {
+  transition: 0.5s ease;
 }
