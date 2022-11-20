@@ -23,7 +23,9 @@ button {
   font-family: "fragment mono";
 }
 
-button[type="main"] {
+/* ------------ BUTTON MAIN ------------*/
+
+button[type^="main"] {
   background-color: yellow;
   border: none;
   border-radius: 50px;
@@ -34,16 +36,20 @@ button[type="main"] {
   transition: 0.5s ease;
 }
 
-button[type="main"]::after {
+button[type^="main"]:hover {
+  padding: 12px 40px 12px 55px;
+}
+
+button[type^="main"]::after {
   content: "";
   background-image: url(../images/arrow_down.svg);
   margin-left: 0;
   opacity: 0;
   transition: 0.5s ease;
-  margin-top: -5px;
+  margin-top: -9px;
 }
 
-button[type="main"]:hover::after {
+button[type^="main"]:hover::after {
   margin-left: 15px;
   margin-top: 0;
   margin-bottom: 0;
@@ -53,9 +59,18 @@ button[type="main"]:hover::after {
   width: 14px;
 }
 
-button[type="main"]:hover {
-  padding: 12px 40px 12px 55px;
+button[type="main-rotate"]::after {
+  transform: rotate(270deg);
+  margin-top: 0px;
+  bottom: -9px;
+  position: relative;
 }
+
+button[type="main-rotate"]:hover::after {
+  bottom: 0;
+}
+
+/* ------------ BUTTON SMALL ------------*/
 
 button[type="small"] {
   background-color: yellow;
@@ -83,7 +98,7 @@ button[type="small"]::after {
   width: 40px;
   height: 18px;
   opacity: 0;
-  margin-left: 0;
+  margin-left: -20px;
   transition: 0.5s ease;
 }
 
@@ -138,10 +153,14 @@ nav section {
   display: flex;
   align-items: center;
   padding: 0px 50px 0px 50px;
+  transition: 0.5s ease;
 }
 
 nav a:hover {
   text-decoration: line-through yellow 2px;
+  font-family: "syne";
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* ------------ LOGO + MENU ------------*/
