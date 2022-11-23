@@ -19,7 +19,7 @@ button[type^="main"]:hover {
 
 button[type^="main"]::after {
   content: "";
-  background-image: url(../images/arrow_down.svg);
+  background-image: url(../../images/arrow_down.svg);
   margin-left: 0;
   opacity: 0;
   transition: 0.5s ease;
@@ -70,7 +70,7 @@ button[type="small"] {
 
 button[type="small"]::after {
   content: "";
-  background-image: url(../images/arrow_right.svg);
+  background-image: url(../../images/arrow_right.svg);
   background-size: 40px 18px;
   width: 40px;
   height: 18px;
