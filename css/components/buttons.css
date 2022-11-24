@@ -2,7 +2,11 @@ button {
   font-family: "fragment mono";
 }
 
-button[type^="main"] {
+button:hover {
+  cursor: pointer;
+}
+
+.main-button {
   background-color: yellow;
   border: none;
   border-radius: 50px;
@@ -13,11 +17,11 @@ button[type^="main"] {
   transition: 0.5s ease;
 }
 
-button[type^="main"]:hover {
+.main-button:hover {
   padding: 12px 40px 12px 55px;
 }
 
-button[type^="main"]::after {
+.main-button::after {
   content: "";
   background-image: url(../../images/arrow_down.svg);
   margin-left: 0;
@@ -26,7 +30,7 @@ button[type^="main"]::after {
   margin-top: -9px;
 }
 
-button[type^="main"]:hover::after {
+.main-button:hover::after {
   margin-left: 15px;
   margin-top: 0;
   margin-bottom: 0;
@@ -36,20 +40,20 @@ button[type^="main"]:hover::after {
   width: 14px;
 }
 
-button[type="main-rotate"]::after {
+.--rotation::after {
   transform: rotate(270deg);
   margin-top: 0px;
   bottom: -9px;
   position: relative;
 }
 
-button[type="main-rotate"]:hover::after {
+.--rotation:hover::after {
   bottom: 0;
 }
 
 /* ------------ BUTTON SMALL ------------*/
 
-button[type="small"] {
+.small-button {
   background-color: yellow;
   border-radius: 50px;
   border: none;
@@ -68,7 +72,7 @@ button[type="small"] {
   opacity: 0;
 }
 
-button[type="small"]::after {
+.small-button::after {
   content: "";
   background-image: url(../../images/arrow_right.svg);
   background-size: 40px 18px;
@@ -79,12 +83,12 @@ button[type="small"]::after {
   transition: 0.5s ease;
 }
 
-.teaser_element:hover button[type="small"]::after {
+.teaser_element:hover .small-button::after {
   opacity: 1;
   margin-left: 15px;
 }
 
-.teaser_element:hover button[type="small"] {
+.teaser_element:hover .small-button {
   padding: 12px 38px 12px 48px;
   opacity: 1;
 }
